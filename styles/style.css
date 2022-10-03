@@ -1,15 +1,92 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-a{
+a {
 	text-decoration: none;
 }
-ul{
+ul {
 	list-style-type: none;
 }
-
-img{
+.article-section {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.article-section img {
 	width: 500px;
+	margin-bottom: 20px;
+}
+
+.form-section {
+	width: 80%;
+	margin: 0 auto;
+	background-color: lightpink;
+}
+.form-section form {
+	margin: 50px 20px;
+	padding: 20px;
+}
+.form-row {
+	border: 1px solid grey;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.form-input {
+	padding: 10px;
+	color: red;
+	border: none;
+	border-left: 1px solid red;
+	border-bottom: 1px solid red;
+	width: 60%;
+}
+.form-input:focus,
+textarea:focus {
+	outline: none;
+	border: 1px solid darkblue;
+}
+.form-input::placeholder {
+	font-size: 20px;
+	color: darkblue;
+}
+.form-row label span,
+.form-row label {
+	color: green;
+	font-size: 20px;
+}
+select {
+	width: 60%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid darkblue;
+}
+textarea {
+	resize: none;
+	width: 60%;
+}
+button {
+	display: block;
+	margin: auto;
+	width: 200px;
+	background-color: aquamarine;
+	border: none;
+	border-radius: 8px;
+	padding: 20px;
+	cursor: pointer;
+}
+input[required] {
+	/* border: 5px solid; */
+}
+
+.required::after {
+	content: "*";
+	color: red;
 }

@@ -28,24 +28,111 @@
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
-		<img src="images/post-2.jpg" alt="image" />
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-			velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-			est laborum.
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-			velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-			est laborum.
-		</p>
+		<section class="form-section">
+			<form>
+				<div class="form-row">
+					<label for="user-name" class="required">სახელი</label>
+					<input
+						type="text"
+						placeholder="სახელი"
+						id="user-name"
+						class="form-input"
+						required
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-email" class="required">email</label>
+					<input type="email" id="user-email" class="form-input" required />
+				</div>
+				<div class="form-row">
+					<label for="user-phone" class="required">phone number</label>
+					<input type="number" id="user-phone" class="form-input" required />
+				</div>
+				<div class="form-row">
+					<label for="user-password" class="required">password</label>
+					<input
+						type="password"
+						id="user-password"
+						class="form-input"
+						required
+					/>
+					<!-- <img src="" alt="" /> -->
+				</div>
+				<div class="form-row">
+					<label for="user-date">date</label>
+					<input type="date" id="user-date" required />
+					<!-- <img src="" alt="" /> -->
+				</div>
+				<div class="form-row">
+					<label for="user-file">file</label>
+					<input type="file" id="user-file" required />
+					<!-- <img src="" alt="" /> -->
+				</div>
+				<div class="form-row">
+					<label for="user-city">city</label>
+					<select name="city" id="city">
+						<option value="tbilisi">tbilisi</option>
+						<option value="kutaisi">kutaisi</option>
+						<option value="batumi">batumi</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="user-message">message</label>
+					<textarea name="" id="user-message" cols="30" rows="10"></textarea>
+				</div>
+				<div class="form-row">
+					<label for="male">
+						<input type="radio" id="male" name="gender" required />
+						<span>male</span>
+					</label>
+
+					<label for="female">
+						<input type="radio" id="female" name="gender" required />
+						<span>female</span>
+					</label>
+
+					<label for="other">
+						<input type="radio" id="other" name="gender" required />
+						<span>other</span>
+					</label>
+				</div>
+
+				<div class="form-row">
+					<label for="read">
+						<input type="checkbox" id="read" required />
+						<span>გავეცანი <a href="#">წესებს და პირობებს</a></span>
+					</label>
+
+					<label for="agree">
+						<input type="checkbox" id="agree" required />
+						<span>გავეცანი წესებს და პირობებს</span>
+					</label>
+				</div>
+
+				<button type="submit">submit</button>
+			</form>
+		</section>
+
+		<section class="article-section">
+			<img src="images/post-2.jpg" alt="image" />
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+		</section>
 	</body>
 </html>
